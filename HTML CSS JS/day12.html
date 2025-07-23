@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alignments</title>
+    <style>
+        /* *{
+            box-sizing: border-box;
+        } */
+         /* body{
+            background-color: rgb(28, 238, 115);
+         } */
+         h1{
+        text-align: center;
+         }
+        .container{
+            background-color: rgb(85, 168, 106);
+            width: 800px;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 10px;
+            margin: auto;
+
+        }
+        .item{
+            background-color: antiquewhite;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 5px;
+            margin: 5px;
+            padding: 5px;
+
+        }
+        #fruit{
+            float: left;
+            width: 47%;
+        }
+        #computer{
+            float: right;
+            width: 47%;
+        }
+        #stationary{
+            /* float: left; */
+            clear: right;
+            width: auto;
+            height: auto;
+        }
+        #glasses{
+            clear: both;
+            /* float: right; */
+            width: auto;
+        }
+        img{
+            border: 2px solid black;
+            border-radius: 5px;
+            height: 100px;
+            width: 100px;
+            position: relative;
+            left: 330px;
+            top: 20px;
+        
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="1.png" alt="img">
+        <h1>welcome to my store</h1>
+        <div id="fruit" class="item">
+            <h3>fruit</h3>
+            <p id="fruitpara" class="para">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil facilis ut a molestiae aperiam quam voluptatem, sint exercitationem quasi pariatur minima delectus quod veniam. Temporibus nesciunt amet praesentium ratione animi facilis asperiores itaque deserunt distinctio aliquid. Vero, itaque deserunt, ex omnis minus atque officia sed ab totam repudiandae animi aliquam.
+            </p>
+        </div>
+        <div id="computer" class="item">
+            <h3>compurter</h3>
+            <p id="computerpara" class="para">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil facilis ut a molestiae aperiam quam voluptatem, sint exercitationem quasi pariatur minima delectus quod veniam. Temporibus nesciunt amet praesentium ratione animi facilis asperiores itaque deserunt distinctio aliquid. Vero, itaque deserunt, ex omnis minus atque officia sed ab totam repudiandae animi aliquam.
+            </p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>stationary</h3>
+            <p id="stationarypara" class="para">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil facilis ut a molestiae aperiam quam voluptatem, sint exercitationem quasi pariatur minima delectus quod veniam. Temporibus nesciunt amet praesentium ratione animi facilis asperiores itaque deserunt distinctio aliquid. Vero, itaque deserunt, ex omnis minus atque officia sed ab totam repudiandae animi aliquam.
+            </p>
+        </div>
+        <div id="glasses" class="item">
+            <h3>glasses</h3>
+            <p id="glassespara" class="para">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil facilis ut a molestiae aperiam quam voluptatem, sint exercitationem quasi pariatur minima delectus quod veniam. Temporibus nesciunt amet praesentium ratione animi facilis asperiores itaque deserunt distinctio aliquid. Vero, itaque deserunt.
+            </p>
+        </div>
+    </div>
+    
+</body>
+</html>
