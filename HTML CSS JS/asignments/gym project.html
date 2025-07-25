@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my gym center</title>
     <style>
-        body{
-            background-image: url(https://t4.ftcdn.net/jpg/04/23/87/53/360_F_423875308_S4w1IW5aReFvYzMGt4bj98GgvEmVKHnd.jpg);
+        body {
+            font-family: "Josefin Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
+            background-color: rgba(82, 2, 2, 0.863);
+            /* background-image: url(https://t4.ftcdn.net/jpg/04/23/87/53/360_F_423875308_S4w1IW5aReFvYzMGt4bj98GgvEmVKHnd.jpg); */
             margin: 0%;
             padding: 0%;
         }
-        .header{
+
+        .header {
             background-color: rgba(0, 0, 0, .5);
             /* border: 2px solid black; */
             position: relative;
@@ -18,8 +25,8 @@
             width: 100%;
         }
 
-        
-        .logo img{
+
+        .logo img {
             height: 40px;
             width: 60px;
             font-size: 30px;
@@ -29,99 +36,217 @@
             top: 20px;
             left: 10px;
         }
-        .navbar ul{
+
+        .navbar ul {
             margin: 0%;
             padding: 0%;
             position: absolute;
             right: 40%;
             top: 25px;
-            
+
         }
-        .navbar ul li a:hover{
+
+        .navbar ul li a:hover {
             color: rgb(224, 77, 77);
             transition: .3s;
         }
-        .button{
+
+        .button {
             position: absolute;
             right: 2%;
             top: 20px;
         }
-        .header button{
+
+        .header button {
             padding: 7px 20px 7px 20px;
             border-radius: 10px;
             border: none;
             font-size: 20px;
         }
-        .header button:hover{
+
+        .header button:hover {
             color: black;
             background-color: rgb(184, 65, 65);
             transition: .3s;
         }
-        .navbar ul li{
+
+        .navbar ul li {
             display: inline-block;
             margin-left: 20px;
             margin-right: 20px;
         }
-        .navbar ul li a{
+
+        .navbar ul li a {
             font-size: 22px;
             color: white;
             text-decoration: none;
         }
-        .form{
+
+        .form {
             height: 490px;
-            background-color: rgba(0, 0, 0, .5);
+            background-color: rgba(0, 0, 0, 0.5);
             position: absolute;
             left: 100px;
             top: 150px;
         }
-        .form h2{
+
+        .form h2 {
             margin-top: 30px;
             font-size: 40px;
             color: white;
             text-align: center;
         }
-        .form input{
+
+        .form input {
             margin: 30px;
             padding: 15px 120px 15px 40px;
             display: block;
             background-color: rgba(255, 255, 255, .3);
             border-radius: 10px;
         }
-        .form input::placeholder{
+
+        .form input::placeholder {
             color: white;
             font-size: 20px;
         }
-        .form button{
+
+        .form button {
             margin: 0%;
             padding: 5px;
             position: absolute;
             right: 30%;
             font-size: 20px;
             color: rgb(255, 255, 255);
-            background-color: rgba(78, 3, 3, 0.555);
-            border-radius: 5px;
+            border: 2px solid black;
+            background-color: rgba(124, 31, 31, 0.555);
+            border-radius: 10px;
         }
-        .text{
+
+        .text {
             position: absolute;
             margin: 0%;
             padding: 0%;
             color: rgb(11, 184, 117);
             font-size: 50px;
+            top: 150px;
             left: 45%;
         }
-        .text2{
+
+        .text2 {
             position: absolute;
             margin: 0%;
             padding: 0%;
             color: rgb(8, 204, 34);
             font-size: 60px;
             left: 57%;
-            top: 200px;
+            top: 260px;
         }
 
+        .form button {
+            color: white;
+            background-color: rgb(245, 94, 94);
+            border: 2px solid black;
+            border-radius: 10px;
+        }
 
+        .form button:hover {
+            color: white;
+            background-color: rgb(85, 2, 2);
+            border: 2px solid black;
+            transition: .3s;
+        }
+
+        .packeges {
+            margin: 0%;
+            padding: 50px;
+            position: absolute;
+            height: 250px;
+            width: 92%;
+            top: 700px;
+            /* border: 2px solid black; */
+        }
+
+        .bronze {
+            background-color: rgba(95, 95, 38, .7);
+            position: absolute;
+            left: 10%;
+            /* border: 2px solid black; */
+            margin: 0%;
+            padding: 10px;
+        }
+
+        .bronze h3 {
+            margin-left: 80px;
+            color: black;
+
+        }
+
+        .bronze img {
+            height: 125px;
+            width: 230px;
+        }
+
+        .bronze p {
+            margin-left: 20px;
+            color: black;
+            font-size: 20px;
+        }
+
+        .gold {
+            background-color: rgba(95, 95, 38, .7);
+            position: absolute;
+            left: 41%;
+            /* border: 2px solid black; */
+            margin: 0%;
+            padding: 10px;
+        }
+
+        .gold h3 {
+            margin-left: 80px;
+            color: black;
+
+        }
+
+        .gold img {
+            height: 125px;
+            width: 230px;
+
+        }
+
+        .gold p {
+            margin-left: 20px;
+            color: black;
+            font-size: 20px;
+        }
+
+        .platinum {
+            background-color: rgba(95, 95, 38, .7);
+            position: absolute;
+            right: 10%;
+            /* border: 2px solid black; */
+            margin: 0%;
+            padding: 10px;
+        }
+
+        .platinum h3 {
+            margin-left: 72px;
+            color: black;
+
+        }
+
+        .platinum img {
+            height: 125px;
+            width: 230px;
+        }
+
+        .platinum p {
+            margin-left: 20px;
+            color: black;
+            font-size: 20px;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <div class="header">
@@ -135,18 +260,18 @@
                     <li><a href="#">services</a></li>
                 </ul>
             </div>
-                <div class="button">
-                    <button class="contact">contact</button>
-                </div>
+            <div class="button">
+                <button class="contact">contact</button>
+            </div>
         </div>
     </header>
     <form action=".js" class="form">
         <h2>Get supplyment</h2>
-            <input type="text" placeholder="Full name">
-            <input type="number" placeholder="Age">
-            <input type="number" placeholder="Weight">
-            <input type="number" placeholder="Height">
-            <button class="supplyment">Get supplyment</button>
+        <input type="text" placeholder="Full name">
+        <input type="number" placeholder="Age">
+        <input type="number" placeholder="Weight">
+        <input type="number" placeholder="Height">
+        <button class="supplyment">Get supplyment</button>
     </form>
     <div class="text">
         <h1>A best gym in</h1>
@@ -154,5 +279,26 @@
     <div class="text2">
         <h1>Delhi</h1>
     </div>
+    <div class="packeges">
+        <div class="bronze">
+            <h3>Bronze</h3>
+            <img src="https://t4.ftcdn.net/jpg/04/23/87/53/360_F_423875308_S4w1IW5aReFvYzMGt4bj98GgvEmVKHnd.jpg"
+                alt="#">
+            <p>1 Trainor for 15 tarinee</p>
+        </div>
+        <div class="gold">
+            <h3>Gold</h3>
+            <img src="https://t4.ftcdn.net/jpg/04/23/87/53/360_F_423875308_S4w1IW5aReFvYzMGt4bj98GgvEmVKHnd.jpg"
+                alt="#">
+            <p>1 Trainor for 10 tarinee</p>
+        </div>
+        <div class="platinum">
+            <h3>Platinum</h3>
+            <img src="https://t4.ftcdn.net/jpg/04/23/87/53/360_F_423875308_S4w1IW5aReFvYzMGt4bj98GgvEmVKHnd.jpg"
+                alt="#">
+            <p>1 Trainor for 5 tarinee</p>
+        </div>
+    </div>
 </body>
+
 </html>
