@@ -11,18 +11,20 @@
             font-optical-sizing: auto;
             font-weight: <weight>;
             font-style: normal;
-            background-color: rgba(82, 2, 2, 0.863);
+            background-color: rgb(82, 2, 2, 0.863);
             /* background-image: url(https://t4.ftcdn.net/jpg/04/23/87/53/360_F_423875308_S4w1IW5aReFvYzMGt4bj98GgvEmVKHnd.jpg); */
             margin: 0%;
             padding: 0%;
         }
 
         .header {
-            background-color: rgba(0, 0, 0, .5);
+            display: s ;
+            background-color: black;
             /* border: 2px solid black; */
-            position: relative;
+            position: fixed;
             height: 80px;
             width: 100%;
+            z-index: 1000;
         }
 
 
@@ -111,17 +113,23 @@
         }
 
         .form button {
-            margin: 0%;
-            padding: 5px;
+            border: 1px solid rgba(95, 95, 38, .7);
+            border-radius: 3px;
+            padding: 10px;
+            color: white;
+            background-color: rgb(212, 73, 73);
+            top: 425px;
             position: absolute;
-            right: 30%;
-            font-size: 20px;
-            color: rgb(255, 255, 255);
-            border: 2px solid black;
-            background-color: rgba(124, 31, 31, 0.555);
-            border-radius: 10px;
+            left: 140px;
+            font-size: 15px;
         }
 
+        .form button:hover {
+            color: white;
+            background-color: rgb(109, 13, 13);
+            transition: .3s;
+        }
+        
         .text {
             position: absolute;
             margin: 0%;
@@ -142,39 +150,33 @@
             top: 260px;
         }
 
-        .form button {
+        /* .form button {
             color: white;
             background-color: rgb(245, 94, 94);
             border: 2px solid black;
             border-radius: 10px;
-        }
-
-        .form button:hover {
-            color: white;
-            background-color: rgb(85, 2, 2);
-            border: 2px solid black;
-            transition: .3s;
-        }
+        } */
 
         .packeges {
             margin: 0%;
             padding: 50px;
             position: absolute;
-            height:900px;
+            height:1100px;
             width: 92%;
             top: 700px;
             /* border: 2px solid black; */
         }
         .packeges h2 {
-            position: absolute;
-            top: 0px;
-            bottom: 20px;
+            color: aliceblue;
+            text-align: center;
+            margin: 0%;
         }
 
         .starter {
-            height: 300px;
+            height: 320px;
             background-color: rgba(95, 95, 38, .7);
             position: absolute;
+            top: 130px;
             left: 10%;
             /* border: 2px solid black; */
             margin: 0%;
@@ -214,9 +216,10 @@
         }
 
         .mid {
-            height: 300px;
+            height: 320px;
             background-color: rgba(95, 95, 38, .7);
             position: absolute;
+            top: 130px;
             left: 41%;
             /* border: 2px solid black; */
             margin: 0%;
@@ -257,9 +260,10 @@
         }
 
         .elite {
-            height: 300px;
+            height: 320px;
             background-color: rgba(95, 95, 38, .7);
             position: absolute;
+            top: 130px;
             right: 10%;
             /* border: 2px solid black; */
             margin: 0%;
@@ -302,8 +306,8 @@
             width: 400px;
             background-color: rgba(95, 95, 38, .7);
             position: absolute;
-            left: 30%;
-            top: 450px;
+            left: 33%;
+            top: 550px;
             /* border: 2px solid black; */
             margin: 0%;
             padding: 10px;
@@ -326,6 +330,7 @@
             font-size: 30px;
         }
         .premium button {
+            font-size: 17px;
             border: 1px solid rgba(95, 95, 38, .7);
             border-radius: 3px;
             padding: 10px;
@@ -333,7 +338,7 @@
             background-color: rgb(212, 73, 73);
             top: 400px;
             position: absolute;
-            left: 170px;
+            left: 160px;
         }
         .premium button:hover{
             color: white;
@@ -376,7 +381,7 @@
         <h1>Delhi</h1>
     </div>
     <div class="packeges">
-        <h2>Start with one plan</h2>
+        <h2 class="packegetext">Start with one plan</h2>
         <div class="starter">
             <h3>Starter</h3>
             <img src="https://t4.ftcdn.net/jpg/04/23/87/53/360_F_423875308_S4w1IW5aReFvYzMGt4bj98GgvEmVKHnd.jpg"
