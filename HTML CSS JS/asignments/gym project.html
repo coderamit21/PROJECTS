@@ -160,13 +160,19 @@
             margin: 0%;
             padding: 50px;
             position: absolute;
-            height: 250px;
+            height:900px;
             width: 92%;
             top: 700px;
             /* border: 2px solid black; */
         }
+        .packeges h2 {
+            position: absolute;
+            top: 0px;
+            bottom: 20px;
+        }
 
-        .bronze {
+        .starter {
+            height: 300px;
             background-color: rgba(95, 95, 38, .7);
             position: absolute;
             left: 10%;
@@ -175,24 +181,40 @@
             padding: 10px;
         }
 
-        .bronze h3 {
+        .starter h3 {
             margin-left: 80px;
             color: black;
 
         }
 
-        .bronze img {
+        .starter img {
             height: 125px;
             width: 230px;
         }
 
-        .bronze p {
+        .starter p {
             margin-left: 20px;
-            color: black;
+            color: rgb(255, 255, 255);
             font-size: 20px;
         }
+        .starter button {
+            color: white;
+            background-color: rgb(212, 73, 73);
+            border: 1px solid rgba(95, 95, 38, .7);
+            border-radius: 3px;
+            padding: 10px;
+            position: absolute;
+            right: 95px;
+            top: 275px;
+        }
+        .starter button:hover{
+            color: white;
+            background-color: rgb(109, 13, 13);
+            transition: .3s;
+        }
 
-        .gold {
+        .mid {
+            height: 300px;
             background-color: rgba(95, 95, 38, .7);
             position: absolute;
             left: 41%;
@@ -201,25 +223,41 @@
             padding: 10px;
         }
 
-        .gold h3 {
-            margin-left: 80px;
+        .mid h3 {
+            margin-left: 91px;
             color: black;
 
         }
 
-        .gold img {
+        .mid img {
             height: 125px;
             width: 230px;
 
         }
 
-        .gold p {
+        .mid p {
             margin-left: 20px;
-            color: black;
+            color: rgb(255, 255, 255);
             font-size: 20px;
         }
+        .mid button {
+            border: 1px solid rgba(95, 95, 38, .7);
+            border-radius: 3px;
+            padding: 10px;
+            color: white;
+            background-color: rgb(212, 73, 73);
+            position: absolute;
+            right: 95px;
+            top: 275px;
+        }
+        .mid button:hover{
+            color: white;
+            background-color: rgb(109, 13, 13);
+            transition: .3s;
+        }
 
-        .platinum {
+        .elite {
+            height: 300px;
             background-color: rgba(95, 95, 38, .7);
             position: absolute;
             right: 10%;
@@ -228,21 +266,79 @@
             padding: 10px;
         }
 
-        .platinum h3 {
-            margin-left: 72px;
+        .elite h3 {
+            margin-left: 82px;
             color: black;
 
         }
 
-        .platinum img {
+        .elite img {
             height: 125px;
             width: 230px;
         }
 
-        .platinum p {
+        .elite p {
             margin-left: 20px;
-            color: black;
+            color: rgb(255, 255, 255);
             font-size: 20px;
+        }
+        .elite button {
+            border: 1px solid rgba(95, 95, 38, .7);
+            border-radius: 3px;
+            padding: 10px;
+            color: white;
+            background-color: rgb(212, 73, 73);
+            top: 275px;
+            position: absolute;
+            right: 95px;
+        }
+        .elite button:hover{
+            color: white;
+            background-color: rgb(109, 13, 13);
+            transition: .3s;
+        }
+        .premium {
+            height: 450px;
+            width: 400px;
+            background-color: rgba(95, 95, 38, .7);
+            position: absolute;
+            left: 30%;
+            top: 450px;
+            /* border: 2px solid black; */
+            margin: 0%;
+            padding: 10px;
+        }
+
+        .premium h3 {
+            margin-left: 150px;
+            color: black;
+
+        }
+
+        .premium img {
+            height: 240px;
+            width: 400px;
+        }
+
+        .premium p {
+            margin-left: 50px;
+            color: rgb(255, 255, 255);
+            font-size: 30px;
+        }
+        .premium button {
+            border: 1px solid rgba(95, 95, 38, .7);
+            border-radius: 3px;
+            padding: 10px;
+            color: white;
+            background-color: rgb(212, 73, 73);
+            top: 400px;
+            position: absolute;
+            left: 170px;
+        }
+        .premium button:hover{
+            color: white;
+            background-color: rgb(109, 13, 13);
+            transition: .3s;
         }
     </style>
 </head>
@@ -280,23 +376,34 @@
         <h1>Delhi</h1>
     </div>
     <div class="packeges">
-        <div class="bronze">
-            <h3>Bronze</h3>
+        <h2>Start with one plan</h2>
+        <div class="starter">
+            <h3>Starter</h3>
             <img src="https://t4.ftcdn.net/jpg/04/23/87/53/360_F_423875308_S4w1IW5aReFvYzMGt4bj98GgvEmVKHnd.jpg"
                 alt="#">
             <p>1 Trainor for 15 tarinee</p>
+            <button>Buy now</button>
         </div>
-        <div class="gold">
-            <h3>Gold</h3>
+        <div class="mid">
+            <h3>Mid</h3>
             <img src="https://t4.ftcdn.net/jpg/04/23/87/53/360_F_423875308_S4w1IW5aReFvYzMGt4bj98GgvEmVKHnd.jpg"
                 alt="#">
             <p>1 Trainor for 10 tarinee</p>
+            <button>Buy now</button>
         </div>
-        <div class="platinum">
-            <h3>Platinum</h3>
+        <div class="elite">
+            <h3>Elite</h3>
             <img src="https://t4.ftcdn.net/jpg/04/23/87/53/360_F_423875308_S4w1IW5aReFvYzMGt4bj98GgvEmVKHnd.jpg"
                 alt="#">
             <p>1 Trainor for 5 tarinee</p>
+            <button>Buy now</button>
+        </div>
+        <div class="premium">
+            <h3>Premium</h3>
+            <img src="https://t4.ftcdn.net/jpg/04/23/87/53/360_F_423875308_S4w1IW5aReFvYzMGt4bj98GgvEmVKHnd.jpg"
+                alt="#">
+            <p>1 Trainor for 5 tarinee</p>
+            <button>Buy now</button>
         </div>
     </div>
 </body>
