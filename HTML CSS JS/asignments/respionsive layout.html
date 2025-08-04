@@ -25,12 +25,12 @@
         /* .navbar > .logo{
             display: inline;
             padding-left: 1rem;
-            font-size: 2rem; */
-        }
+            font-size: 2rem;
+        }     */
         .navbar ul{
             list-style: none;
             /* font-size: 1rem; */
-            padding-left: 50rem;
+            padding-left: 1rem;
             /* display: grid; */
             /* align-content: center; */
         
@@ -38,20 +38,25 @@
     .navbar ul li{
         display: inline;
         padding-right: 2rem;
-        font-size: 1rem;
+        /* font-size: 1rem; */
         /* justify-content: center; */
         /* vertical-align: middle; */
         text-align: right;
     }
+    .navbar ul li a{
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: black;
+    }
         .content{
-            display: grid;
+            /* display: grid; */
             grid-area: content;
-            color: white;
-            background-color: rgb(123, 160, 55);
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
             border-radius: .1rem;
-            /* text-align: center; */
-            justify-content: center;
-            align-items: center;
+            text-align: center;
+            /* justify-content: center; */
+            /* align-items: center; */
         }
         .aside{
             display: grid;
@@ -59,8 +64,9 @@
             background-color: rgb(66, 14, 114);
             border-radius: .1rem;
             /* text-align: center; */
-            justify-content: center;
-            align-items: center;
+            /* justify-content: center; */
+            /* align-items: center; */
+            text-align: center;
         }
         .footer{
             color: white;
@@ -98,6 +104,28 @@
             }
 
         }       
+        .content img{
+            width: 100%;
+            height: auto;
+            max-width: 90%;
+            border-radius: .1rem;
+            padding: 1rem;
+        }
+        .content h1{
+            /* padding: 1rem; */
+            font-size: 2rem;
+        }
+        .content p{
+            padding: 1rem;
+            font-size: 1.5rem;
+        }
+        .aside img{
+            width: 100%;
+            height: auto;
+            max-width: 90%;
+            border-radius: .1rem;
+            padding: 1rem;
+        }
     </style>
 </head>
 <body>
@@ -110,19 +138,28 @@
     <div class="navbar">
         <!-- <h1 class="logo">logo</h1> -->
         <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Contact</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </div>
 
     <div class="content">
         <h1>my content will be here.</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpLDfjusC4XwSLGMoArYXe__ou0xTVEHA1EoyRZL2cmQ1LgthXm-HXNgP5-pQ8PjaRf44&usqp=CAU" alt="#">
+        <img src="https://images.wallpaperscraft.com/image/single/lion_king_of_beasts_lie_52647_300x168.jpg" alt="#">
+        
+        
+        <h1>The king of forest</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sint nisi sequi sapiente velit distinctio quibusdam culpa, eveniet magnam deleniti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nostrum aliquid officia beatae, culpa deserunt sapiente accusantium architecto atque voluptatibus.</p>
     </div>
     
     <div class="aside">
         <h1>aside</h1>
+        <img src="https://images.wallpaperscraft.com/image/single/lion_king_of_beasts_lie_52647_300x168.jpg" alt="#">
+        <img src="https://images.wallpaperscraft.com/image/single/lion_king_of_beasts_lie_52647_300x168.jpg" alt="#">
+        <img src="https://images.wallpaperscraft.com/image/single/lion_king_of_beasts_lie_52647_300x168.jpg" alt="#">
     </div>
     
     <div class="footer">
