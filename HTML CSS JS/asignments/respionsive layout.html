@@ -22,41 +22,52 @@
             border-radius: .1rem;
             
         }
-        .navbar > .logo{
+        /* .navbar > .logo{
             display: inline;
             padding-left: 1rem;
-            font-size: 2rem;
+            font-size: 2rem; */
         }
         .navbar ul{
             list-style: none;
-            font-size: 1rem;
+            /* font-size: 1rem; */
             padding-left: 50rem;
-            display: inline;
+            /* display: grid; */
+            /* align-content: center; */
+        
         }
     .navbar ul li{
         display: inline;
         padding-right: 2rem;
+        font-size: 1rem;
+        /* justify-content: center; */
+        /* vertical-align: middle; */
+        text-align: right;
     }
         .content{
+            display: grid;
             grid-area: content;
             color: white;
             background-color: rgb(123, 160, 55);
             border-radius: .1rem;
-            text-align: center;
+            /* text-align: center; */
+            justify-content: center;
+            align-items: center;
         }
         .aside{
-            grid-area: aside;
+            display: grid;
             color: white;
             background-color: rgb(66, 14, 114);
             border-radius: .1rem;
-            text-align: center;
+            /* text-align: center; */
+            justify-content: center;
+            align-items: center;
         }
         .footer{
             color: white;
             background-color: rgb(34, 150, 49);
             border-radius: .1rem;
             grid-area: footer;
-            text-align: ;
+            text-align: center;
         }
         .container{
             display: grid;
@@ -73,7 +84,7 @@
             /* width: 100vw; */
             gap: .3rem;
         }
-        @media (max-width: 480px){
+        @media (max-width: 640px){
             .container{
                 grid-template-columns: 1fr;
                 grid-template-rows: 3rem 3rem auto auto 3rem;
@@ -97,7 +108,7 @@
     </div>
 
     <div class="navbar">
-        <h1 class="logo">logo</h1>
+        <!-- <h1 class="logo">logo</h1> -->
         <ul>
             <li>Home</li>
             <li>About</li>
