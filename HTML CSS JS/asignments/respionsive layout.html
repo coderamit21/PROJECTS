@@ -70,7 +70,7 @@
         }
         .footer{
             color: white;
-            background-color: rgb(34, 150, 49);
+            background-color: rgb(46, 8, 8);
             border-radius: .1rem;
             grid-area: footer;
             text-align: center;
@@ -126,6 +126,100 @@
             border-radius: .1rem;
             padding: 1rem;
         }
+        .aside p{
+            font-size: 1.3rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        .footer {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 1rem;
+            height: 40rem;
+            background-color: #06558a;
+            padding: 2rem;
+        }
+        .footer > .coulmn1{
+            text-align: center;
+            padding: 1rem;
+        }
+        .footer > .coulmn1 img{
+            height: 9rem;
+            width: 9rem;
+        }
+        .footer > .coulmn2 a{
+            color: white;
+            text-align: justify;
+            text-decoration: none;
+            font-size: 1.5rem;
+            display: block;
+        }
+        .footer > .coulmn2 > .main{
+            margin-bottom: 2rem;
+            margin-top: 1rem;
+            font-size: 2rem;
+        }
+        .footer > .coulmn2 > .privacy{
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+            font-size: 2rem;
+        }
+        .footer > .coulmn3 h2{
+            font-size: 1.6rem;
+            padding: 0rem;
+            text-align: justify;
+        }
+        .footer > .coulmn3 p{
+            font-size: 1.3rem;
+            padding: 0rem;
+            text-align: justify;
+        }
+        .footer > .coulmn3 > .text2{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            font-size: 1.6rem;
+        }
+        .footer > .coulmn4 h2{
+            font-size: 1.6rem;
+            padding: 0rem;
+            text-align: justify;
+        }
+        .footer > .coulmn4 button{
+            width: 100%;
+            height: 4rem;
+            margin-top: 1rem;
+            font-size: 1.4rem;
+            background-color: #06558a;
+            color: white;
+            border: none;
+            border-radius: .1rem;
+            border: 2px solid rgb(221, 92, 92);
+        }
+        @media(min-width: 641px) {
+            .footer {
+                /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+                grid-template-areas: 
+                "coulmn1 coulmn2 coulmn3 coulmn4";
+            }
+            
+            
+        }
+        @media(max-width: 640px) {
+            .footer {
+                height: 110rem;
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                "coulmn1"
+                "coulmn2"
+                "coulmn3"
+                "coulmn4";
+            }
+            .footer > .coulmn1 img{
+                display: block;                
+            }
+            
+        }
+
     </style>
 </head>
 <body>
@@ -158,12 +252,54 @@
     <div class="aside">
         <h1>aside</h1>
         <img src="https://images.wallpaperscraft.com/image/single/lion_king_of_beasts_lie_52647_300x168.jpg" alt="#">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At labore assumenda porro, ullam animi doloremque illum doloribus aperiam quaerat fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde perferendis deleniti facilis sit minima ut adipisci nam voluptate explicabo quia!</p>
         <img src="https://images.wallpaperscraft.com/image/single/lion_king_of_beasts_lie_52647_300x168.jpg" alt="#">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio dolores veniam odio, dolore officiis ullam consequuntur quibusdam doloremque iure delectus voluptate quos soluta hic? Eligendi explicabo distinctio voluptatum, a obcaecati tenetur optio reiciendis cum, magni corrupti nulla sunt non in?</p>
         <img src="https://images.wallpaperscraft.com/image/single/lion_king_of_beasts_lie_52647_300x168.jpg" alt="#">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum dolorem nemo eos at beatae ut. Vel laboriosam blanditiis commodi, fugiat quisquam eligendi consectetur. Numquam, quaerat, dolore officia nisi fugit illo repudiandae non commodi similique dolorem repellendus, ipsa esse animi sunt.</p>
     </div>
     
     <div class="footer">
-        <h1>footer</h1>
+        <div class="coulmn1">
+            <h1>footer</h1>
+            <img src="https://shop.polarbearsinternational.org/wp-content/uploads/2021/08/Logo-pbi-white.svg" alt="#">
+            <img src="https://shop.polarbearsinternational.org/wp-content/uploads/2024/04/Ratings_BLK_4star-1.png" alt="#">
+            <img src="https://shop.polarbearsinternational.org/wp-content/uploads/2024/04/transparency-platinum.png" alt="#">
+        </div>
+        <div class="coulmn2">
+            <a href="#" class="main">
+                main website
+            </a>
+            <a href="#" class="privacy">
+                privacy policy
+            </a>
+            <a href="#">
+                faq
+            </a>
+            <a href="#">
+                contact us
+            </a>
+            <a href="#">
+                account login
+            </a>
+        </div>
+        <div class="coulmn3">
+            <h2>shipping information</h2>
+            <p>
+                Adoption kits and gifts are only shipped to the U.S. and Canada. Please allow 5-14 days* for packages  to arrive. *This is subject to change based on the time of year and shipping destination.
+            </p>
+            <h2 class="text2">need asistence ?</h2>
+            <p>For questions about our products or assistance with your order, please email us at fundraising@pbears.org.</p>
+        </div>
+        <div class="coulmn4">
+            <h2>Act Now</h2>
+            <button>Donate</button>
+            <button>Other ways to give</button>
+            <button>Take Action</button>
+            <button>Awairness Events</button>
+            <button>Sign-up For ENews</button>
+        </div>
+        <h2>© 2025 Polar Bears International.</h2>
     </div>
 </div>
     
